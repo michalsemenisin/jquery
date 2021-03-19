@@ -1,0 +1,149 @@
+
+.home-header{
+    background:no-repeat center;
+    background-size: cover;
+    /*background-image: url('../img/uvodni_obrazek.png');*/
+    background: linear-gradient(to top, #000066 0%, #3399ff 100%); 
+    height: 500px;
+
+}
+.jumbotron{
+    padding: 4rem 2rem;
+    padding-top: 4rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+body{
+    background: linear-gradient(to top, #c9c9c9 0%, #ffffff 100%);
+    
+}
+.white-text{
+    color: #fff !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    line-height: 1.2;
+    color: inherit;
+}
+h2 {
+    font-size: 1.875rem;
+}
+.telo {
+    background-image: url('../img/obrazek_telo.png');
+    background-size: cover;
+    background: no-repeat center;
+}
+
+logo{
+    padding-right: 10px !important;
+    margin-right: 10px !important;
+}
+.bg-dark{
+    background-color: black !important;
+}
+
+nav{
+    font-size: 18px
+}
+seznam{
+    margin-left: 10px !important;
+}
+.display-1{
+    font-size: 9em
+}
+polozka { 
+    display: block;
+    list-style-type: none !important;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 50px;
+}
+.list-unstyled{
+    padding-left: 10px;
+}
+main{
+    font-size: 1.2em;
+    font-family: 'Didact Gothic', sans-serif;
+    
+
+}
+podnapis {
+    font-size: 2em !important;
+}
+tg{
+    table-layout: fixed;
+    width: 239px;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+    }
+img{
+        height: auto;
+        max-width: 100%;
+    }
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(60, 92, 233);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.total
+{
+  font-size:2rem;
+  font-weight:bold;
+}
+
+.total-val
+{
+  font-size:2rem;
+  border:
+}
+

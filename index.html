@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="cs">
+   <head>
+      <title>Kalkulačka</title>
+      <meta name="description=" content="Výpočty cen zjístíte na této stránce">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/cosmo.min.css">
+      <link rel="stylesheet" href="toastr.min.css">
+      <link rel="stylesheet" href="css/styly.css">
+   </head>
+   <body>
+      <header>
+         <div class="jumbotron home-header">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="container">
+                     <a class="navbar-brand logo" href="index.html">Výpočty.cz</a>
+                     <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <h1 class="white-text display-1 text-center">Kalkulačka ceny</h1>
+               <hr>
+            </div>
+         </div>
+      </header>
+      <main class="telo">
+         <div class="container telo">
+            <div class="card">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h2 class="text-center">Kalkulačka</h2>
+                        <hr>
+                        <div class="card">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                               Položka
+                            </div>
+                            <div class="col-3">
+                               Počet
+                            </div>
+                            <div class="col-2">
+                               Cena 
+                            </div>
+                         </div>
+                         <hr style="background-color:black">
+                        <div class="row">
+                           <div class="col-6">
+                              1. Rohlík
+                           </div>
+                           <div class="col-3">
+                              <input type="number" value="0" class="qty" id="qty_rohlik"/>
+                           </div>
+                           <div class="col-2">
+                              <input type="number" readonly value="0" id="price_rohlik"/>
+                           </div>
+                        </div>
+                        <div class="row my-3">
+                           <div class="col-6">
+                              2. Máslo
+                           </div>
+                           <div class="col-3">
+                              <input type="number" value="0" class="qty" id="qty_maslo"/>
+                           </div>
+                           <div class="col-2">
+                              <input type="number" readonly value="0" id="price_maslo"/>
+                           </div>
+                        </div>
+                        <div class="row my-3">
+                           <div class="col-6">
+                              3. Vajíčko
+                           </div>
+                           <div class="col-3">
+                              <input type="number" class="qty" value="0" id="qty_vajicka_6"/>
+                           </div>
+                           <div class="col-2">
+                              <input type="number" readonly value="0" id="price_vajicka_6"/>
+                           </div>
+                        </div>
+                        <div class="row my-3">
+                           <div class="col-6">
+                              4. Gothaj
+                           </div>
+                           <div class="col-3">
+                              <input type="number" class="qty" value="0" id="qty_gothaj"/>
+                           </div>
+                           <div class="col-2">
+                              <input type="number" readonly value="0" id="price_gothaj"/>
+                           </div>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-6">
+                               5. Eidam
+                            </div>
+                            <div class="col-3">
+                               <input type="number" class="qty" value="0" id="qty_eidam"/>
+                            </div>
+                            <div class="col-2">
+                               <input type="number" readonly value="0" id="price_eidam"/>
+                            </div>
+                         </div>
+                        <div class="row my-4">
+                           <div class="col-9 text-right total">
+                              Cena celkem:
+                           </div>
+                           <div class="col-2 total-val">
+                              <span id="total_value">0</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+         </div>
+      </main>
+      <br>
+      <footer>
+         <div class="container">
+            <div class="card">
+               <div class="card-body">
+                  <a href="https://www.facebook.com" target="_blank">
+                  <i id="social-fb" class="fa fa-facebook-square fa-3x social"></i>
+                  </a>
+                  <a href="" target="_blank">
+                  <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+         <script src="js/calc.js"></script>
+      </footer>
+   </body>
+</html>
